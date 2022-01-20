@@ -40,10 +40,19 @@ spec:
       name: Fetch Base
       action: fetch:template
       input:
-        url: ./template
+        url: ./skeleton
         values:
-          name: ${{ parameters.name }}
-
+          component_id: ${{ parameters.name }}
+          description: ${{ parameters.name }}
+          
+#    - id: fetch-base
+#      name: Fetch Base
+#      action: fetch:template
+#      input:
+#        url: ./template
+#        values:
+#          name: ${{ parameters.name }}
+          
     - id: fetch-docs
       name: Fetch Docs
       action: fetch:plain

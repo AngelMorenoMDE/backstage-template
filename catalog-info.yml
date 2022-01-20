@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ${{ parameters.name }}
+  description: ${{ parameters.name }}
+spec:
+  type: service
+  lifecycle: experimental
+  owner: arquitectura-empresarial-team
+  system: arquitectura-empresarial
+
